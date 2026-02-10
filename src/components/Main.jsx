@@ -3,7 +3,7 @@ import Square from "./Square";
 import { Chess } from "chess.js";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyBr6ya1XZxOn6vWAmMNziAieRQ_gbaeaqY";
+const API_KEY = import.meta.env.VITE_GEMINI_API;
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // --- 1. MODEL CONFIGURATION ---
